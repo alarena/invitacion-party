@@ -1,0 +1,12 @@
+<div class="container text-center mt-5">
+  <h1>¡Hola {{ nombreInvitado }}! 🎉</h1>
+  <p class="lead">Te esperamos en nuestra celebración especial.</p>
+
+  <img src="/assets/kirby.gif" alt="gif de fiesta" width="300" class="mt-3">
+  <p class="mt-3"><strong>📅 Fecha:</strong> Sábado 8 de marzo de 2025</p>
+  <p><strong>📍 Lugar:</strong> Casa de Denisse</p>
+
+  <button *ngIf="!confirmado" class="btn btn-success mt-3" (click)="confirmarAsistencia()">Confirmar Asistencia</button>
+
+  <p *ngIf="confirmado" class="mt-3 text-success">🎊 ¡Gracias, {{ nombreInvitado }}, por confirmar tu asistencia! Nos vemos pronto.</p>
+</div>
